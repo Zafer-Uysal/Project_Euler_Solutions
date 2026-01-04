@@ -14,12 +14,12 @@ def feb_is_leap(year):
 
 days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 day_of_week = 0 
-count = 0
+sundays = 0
 
 for year in range(1900, 2001):
     for month in range(12):
         if year >= 1901 and day_of_week == 6:
-            count += 1
+            sundays += 1
 
         days = days_in_month[month]
         if month == 1 and feb_is_leap(year):
@@ -27,5 +27,5 @@ for year in range(1900, 2001):
 
         day_of_week = (day_of_week + days) % 7
 
-print(count)
+print("Number of sundays fell on the first of the month during the twentieth century: ", sundays)
 
