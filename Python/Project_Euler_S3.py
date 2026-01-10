@@ -1,5 +1,8 @@
-# The prime factors of 13195 are 5, 7, 13 and 29.
-# What is the largest prime factor of the given 600851475143
+# Project Euler – Problem 3
+# Title: Largest Prime Factor
+# Link: https://projecteuler.net/problem=3
+#
+# Find the largest prime factor of a given number.
 
 start_num = 600851475143
 prime_factors = []
